@@ -1,0 +1,60 @@
+/* General Styles for Larger Screens */
+body { 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 30%;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    /* Flexbox Changes for My UX Skills Section */
+    .flexContainer {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .flexContainer .skill {
+        width: 100%; /* Make each skill take full width */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    /* Grid Changes for My Work Section (if present) */
+    .workGrid {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Adjust rows automatically */
+        gap: 15px; /* Reduce gap for mobile */
+    }
+
+    .project {
+        flex-direction: column; /* Stack image and details vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .project img {
+        width: 100px; /* Adjust the size of the images */
+        height: 100px; /* Keep the images square */
+    }
+
+    .myWork button {
+        width: 100%; /* Make buttons take full width */
+        padding: 10px; /* Add padding for mobile */
+    }
+}
+
